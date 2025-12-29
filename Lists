@@ -1,3 +1,6 @@
+What are data structures?
+answer: data structures manage and store collection of values in a single variable
+
 states = ["DC", "va", "ma"]
 '''
 print (states[-1])
