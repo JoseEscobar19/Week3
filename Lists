@@ -1,0 +1,49 @@
+states = ["DC", "va", "ma"]
+'''
+print (states[-1])
+print (states[-2])
+print (states[-3)
+'''
+#modify existing values, mutable
+
+states[2] = "fl"
+
+print(states)
+
+#to find out how many items are in a list, use builtin
+# function called len(), passinside this list we want
+#lenght of
+
+len(states)
+
+print(len(states))
+
+#len of the list will always be one higher of the last
+#index, if the output is 3, then the index of last is 2
+
+#methods are like functions for lists/ data structures, 
+# can be built in or custom
+#methods are always associated with an object
+#a list is a type of object(list object)
+#there are specific builtin methods for lists
+#example: listname.methodname(arguments)
+
+#example, append method to add to the end of the lis
+states.append("NY")
+print(states)
+
+#to remove a item`
+#use the pop(), if without arg, itll remove the lastone,
+#if want to remove a epcific, just specify index
+
+states.pop()
+print(states)
+
+states.pop(1)
+print(states)
+
+
+
+
+
+
