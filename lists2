@@ -1,0 +1,85 @@
+#iterating through a list using For loop
+states = ["Washington", "Virginia", "Maryland"]
+
+for x in states:
+    print(x)
+    
+# x is just the iteration variable, best practice to rename
+# it in a reasonable way, relatable to the contents
+
+for state in states:
+    print(state)
+    
+'''
+the variable name you use here does not matter to the computer,
+but if you give it a descriptive name, it will help you
+and others who look at your code understand what's going on. 
+'''
+
+#can modify the list as well
+
+for state in states:
+    state = state.lower()
+        print(state)
+#to find whether an item exists in a list with the in keyword
+
+'''
+The in keyword can be used on its own, without a for loop.
+You can use it to construct a conditional expression that 
+evaluates as Boolean True or False.
+You can also use the not Boolean operator along with it, to
+flip its return value from True to False or vice versa.
+'''
+
+print("Washington" in states)
+print("Tennesse" in states)
+print("Washington" not in states)
+
+"""
+the output would be:
+True
+False
+False
+"""
+#Concatenating Lists
+
+'''
+We can concatenate two lists together 
+with the addition operator (+).
+'''
+states2 = ['Arizona', 'Ohio', 'Louisiana']
+
+'''
+Then declare a new variable named best_states, and 
+assign to it the value of concatenating the states 
+and states2 lists together:
+'''
+best_states = states = states2
+
+print(best_states)
+
+#slicing lists
+'''
+To slice a list means to retrieve a subsection of it,
+This does not alter the original list. 
+To slice a list, we use bracket notation along with a colon.
+'''
+# retrieves list items from best_states with index 1-3, 
+#not including 3 (so, index 1 and 2)
+print(best_states[1:3])
+
+# retrieves list items starting from the beginning, to
+#index 2, but not including 2 (so, index 0 and 1). 
+print(best_states[:2])
+
+# retrieves list items starting from index 4, 
+#all the way to the end.
+print(best_states[4:])
+
+
+
+
+
+
+
+
