@@ -1,0 +1,25 @@
+import random
+
+diamonds = ["AD", "2D", "3D", "4D", "5D", "6D", "7D", "8D", "9D", "10D", "JD", "QD", "KD"]
+
+hands = []
+
+#this while diamonds line will iterate through loop, as long as the list i snot empty
+#the remove() list method helps remove the specified item
+#the append() method helps add the item to the new list
+while diamonds:
+    print("Enter an option below")
+    user_choice = input("either enter to pick a card, or Q plus enter to quit: \n")
+    if user_choice == "":
+        random_card = random.choice(diamonds)
+        print(f"the card you chose is {random_card} \n")
+        diamonds.remove(random_card)
+        hands.append(random_card)
+        print(f"the old deck remains: {diamonds} \n")
+        print(f"the cards you hold are {hands} \n")
+    elif user_choice == "Q":
+        break
+    
+    if not diamonds:
+        print("There are no more cards to pick")
+        break
