@@ -1,0 +1,14 @@
+
+
+Negative numbers in a notition or slicing notation indicates a reverse position relative to the end of the sequence, instead of the start.
+so for example: 
+
+test = [1,2,3,4]
+
+print(test[-1]) will output [4,3,2,1]
+
+and in the slicing the format is [start:stop:step]
+
+so the [-1:-1:1]
+
+the start begins from the last item, and the stop begins from the start. and the last item is the step is how many counts in the list itll go through
